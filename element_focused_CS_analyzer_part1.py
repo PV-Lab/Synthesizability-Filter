@@ -13,13 +13,16 @@ from itertools import product as pdt
 from statistics import mean
 import torch
 
-def save_to_csv(attached_data2save, elements_2find):
-    filename = 'Summary_ternary'
-    for i in elements_2find:
-        filename = filename + '_' + i
-    file_name = filename + '.csv'
-    attached_data2save.to_csv("./Results/Results_Eg_sites=20/%s" % file_name)
-    print('Saved ', file_name)
+def save_to_csv(attached_data2save, elements_2find, path):
+    # filename = 'Summary_ternary'
+    # for i in elements_2find:
+    #     filename = filename + '_' + i
+    # file_name = filename + '.csv'
+    # attached_data2save.to_csv("./Results/Results_Eg_sites=20/%s" % file_name)
+    # print('Saved ', file_name)
+    elems = ''.join(elements_2find)
+    filename = 'statespace'+ '_'+ elems + '.csv'
+    attached_data2save.to_csv(path/filename)
     print('-'*30)
 
 def create_final_dataframe(elements_2find, cp, charges_splits, formula_list, pretty_formula, mp_ids, icsd_ids, mp_FEPA, mp_eabovehull, d2s):
@@ -515,7 +518,7 @@ def load_charge_probability_database(filename):
 
     return recorded_ele_list, recorded_charge_states, recorded_charge_probabilities
 
-def filter(elements_2find_original, charge_mixing,num, freq):
+def filter(elements_2find_original, charge_mixing,num, freq, path):
     # Section 1 (define variables)
     df = pd.read_hdf("all_materials_9June2022.h5")
 
@@ -717,7 +720,7 @@ def filter(elements_2find_original, charge_mixing,num, freq):
     attached_data2save = attached_data2save.drop_duplicates(subset=['reduced_formula']).reset_index(drop=True)
     
     #Section 18 (Save Data)
-    save_to_csv(attached_data2save, elements_2find)
+    save_to_csv(attached_data2save, elements_2find, path)
     return attached_data2save
 
 def main():
