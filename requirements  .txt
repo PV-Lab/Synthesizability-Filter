@@ -1,0 +1,6 @@
+requirements : 
+python                    3.11.4
+pymatgen                  2023.9.2
+numpy                     1.25.2 
+pandas                    2.1.0  
+htmlmerger                0.1.46
