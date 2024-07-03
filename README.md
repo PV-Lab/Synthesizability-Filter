@@ -9,7 +9,12 @@ The dataset used to the analysis can be download rom here (https://www.dropbox.c
   **File dependencies:**\
   a)	Pualing_ENs.xlsx\
   b)	Wiki_charge_list.xlsx\
-  c)	charge_probabiloty_database.csv\
-3.	**stoichiometry_filters.py:** file where the intra phase diagram filter, and cross phase diagram filter is implemented.\
-4.	**Data_analysis.py:** file used to generate the ternary plots shown in Figure 3 in the paper. 
+  c)	charge_probabiloty_database.csv
+3.	**stoichiometry_filters.py:** file where the intra phase diagram filter, and cross phase diagram filter is implemented.
+4.	**Data_analysis.py:** file used to generate the ternary plots shown in Figure 3 in the paper.
+
+## Running instructions : 
+1. The code is run from the **run.py** file.
+2. Specify the results directory by updating the 'dir_name'
+3. Hit run, the results will be generated in the results directory in the sub_directory specified by the user.
 
