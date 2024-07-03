@@ -5,11 +5,11 @@ The dataset used to the analysis can be download rom here (https://www.dropbox.c
 
 ## Files: 
 1.	**run.py:** main file from where the code is run
-2.	**charge_neutrality_and_oxidation_state_filter.py:** file where the charge neutrality filter, electronegativity balance filter, and the two-oxidation state filter is implemented.\\ 
-  **File dependencies:**
-  a)	Pualing_ENs.xlsx\\
-  b)	Wiki_charge_list.xlsx\\
-  c)	charge_probabiloty_database.csv\\
-3.	**stoichiometry_filters.py:** file where the intra phase diagram filter, and cross phase diagram filter is implemented.\\
+2.	**charge_neutrality_and_oxidation_state_filter.py:** file where the charge neutrality filter, electronegativity balance filter, and the two-oxidation state filter is implemented.\
+  **File dependencies:**\
+  a)	Pualing_ENs.xlsx\
+  b)	Wiki_charge_list.xlsx\
+  c)	charge_probabiloty_database.csv\
+3.	**stoichiometry_filters.py:** file where the intra phase diagram filter, and cross phase diagram filter is implemented.\
 4.	**Data_analysis.py:** file used to generate the ternary plots shown in Figure 3 in the paper. 
 
