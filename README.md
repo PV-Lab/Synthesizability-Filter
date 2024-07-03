@@ -14,7 +14,8 @@ The dataset used to the analysis can be download rom here (https://www.dropbox.c
 4.	**Data_analysis.py:** file used to generate the ternary plots shown in Figure 3 in the paper.
 
 ## Running instructions : 
-1. The code is run from the **run.py** file.
-2. Specify the results directory by updating the 'dir_name'
-3. Hit run, the results will be generated in the results directory in the sub_directory specified by the user.
+1. Create python environment according to **requirements.txt**
+2.  The code is run from the **run.py** file.
+3. Specify the results directory by updating the 'dir_name'
+4. Hit run, the results will be generated in the results directory in the sub_directory specified by the user.
 
